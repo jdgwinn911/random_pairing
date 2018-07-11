@@ -30,7 +30,7 @@ class RandomPairing < Minitest::Test
     end
 
     def test_that_sum_on_odd_end_gets_shoved_into_last_array
-        names = ["billy", "zatch", "breadward", "peter", "randy"]
+        names = ["billy","fredward", "zatch", "breadward", "peter", "randy"]
         assert_equal(3, pairing_names(names).length)
     end
 
