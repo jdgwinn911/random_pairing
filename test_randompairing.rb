@@ -25,7 +25,7 @@ class RandomPairing < Minitest::Test
     end
 
     def test_that_it_works_with_odd_nums_of_names
-        names = ["billy", "fredward", "zatch"]
+        names = ["billy", "fredward", "zatch", "breadward", "peter", "randy"]
         assert_equal(3, pairing_names(names).length)
     end
 
