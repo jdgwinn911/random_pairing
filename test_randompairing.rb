@@ -7,6 +7,10 @@ class RandomPairing < Minitest::Test
         assert_equal(Array, pairing_names(names).class)
     end
 
+    def test_that_array_has_been_shuffled
+        refute_equal(["billy", "fredward", "breadward", "peter", "zatch"], pairing_names(["billy", "fredward", "breadward", "peter", "zatch"]))
+    end
+
 
 
 
