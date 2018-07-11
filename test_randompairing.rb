@@ -19,8 +19,9 @@ class RandomPairing < Minitest::Test
         refute_equal([["fredward", "billy"], ["zatch", "breadward", "peter"]], pairing_names(["billy", "fredward", "breadward", "peter", "zatch"]))
     end
 
-    def test_that_it_works_with_even_nums
-        assert_equal(["fredward", "billy"], pairing_names(["billy", "fredward", "breadward", "peter", "zatch"]))
+    def test_that_it_works_with_even_nums_of_names
+        names = ["billy", "fredward", "breadward", "zatch"]
+        assert_equal(2, pairing_names(names).length)
     end
 
 
