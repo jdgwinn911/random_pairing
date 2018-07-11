@@ -24,6 +24,11 @@ class RandomPairing < Minitest::Test
         assert_equal(2, pairing_names(names).length)
     end
 
+    def test_that_it_works_with_odd_nums_of_names
+        names = ["billy", "fredward", "zatch"]
+        assert_equal(3, pairing_names(names).length)
+    end
+
 
 
 
