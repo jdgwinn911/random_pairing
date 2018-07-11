@@ -15,6 +15,10 @@ class RandomPairing < Minitest::Test
         refute_equal([["billy", "fredward"], ["breadward", "peter", "zatch"]], pairing_names(["billy", "fredward", "breadward", "peter", "zatch"]))
     end
 
+    def test_that_odd_name_out_gets_shoved_into_existing_array
+        assert_equal([["peter", "billy"], ["breadward", "fredward", "zatch"]], pairing_names(["billy", "fredward", "breadward", "peter"]))
+    end
+
 
 
 
